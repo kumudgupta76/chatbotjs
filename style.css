@@ -1,0 +1,154 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  text-align: center; 
+  box-sizing: border-box;
+  background-color: darkgray;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover {
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+
+#wrapper {
+  max-width: 600px;
+  text-align: left;
+  margin: 0px auto;
+  background-color: whitesmoke;
+  border: 5px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#chat-area{
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 45px;
+  box-sizing: border-box;
+}
+
+#compose-area {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+textarea {
+  position:absolute;
+  padding:20px 20px;
+  background: lightblue;
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-size: 120%;
+  padding: .5em 10% .5em 2%;
+}
+
+#sendButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  
+}
+
+button {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
+  padding: 5px 20px;
+  font-size: 120%;
+  background-color: teal;
+  color: white;
+  border-radius: 8px;
+}
+
+#startButton {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 5px black;
+  max-width: 300px;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+#robot {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.avatar {
+  position: absolute;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-color: darkgray;
+  border: 2px solid darkgray;
+  border-radius: 50%;
+  
+}
+
+.avatar-bot {
+  left: 10px;
+  background-image: url("https://hackr.io/assets/images/programming-images/programming-logo-120.png");
+}
+
+.avatar-user {
+  right: 10px;
+  background-image: url("https://hackr.io/assets/images/default-users.jpg");
+}
+
+.chat-bot {
+  background-color: #ebebeb;
+  padding: 7px 15px;
+  float: left;
+  word-break: break-word;
+  width: 60%;
+  margin: 0px 36% 15px 4%;
+  border-radius: 0px 20px 20px 20px;
+  box-sizing: border-box;
+  box-shadow: -3px 3px darkgrey;
+  min-height: 2em;
+}
+
+.chat-user {
+  background-color: #919292;
+  padding: 7px 15px;
+  text-align: right;
+  border-radius: 20px 0px 20px 20px;
+  float: left;
+  word-break: break-word;
+  width: 60%;
+  margin: 0px 4% 15px 36%;
+  box-sizing: border-box;
+  box-shadow: 3px 3px #C4B7E1;
+  color: rgba(255, 255, 255, 0.8);
+  min-height: 2em;
+}
